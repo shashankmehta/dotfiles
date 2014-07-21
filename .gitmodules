@@ -1,0 +1,24 @@
+[submodule "vim/.vim/bundle/vim-colors-solarized"]
+	path = vim/.vim/bundle/vim-colors-solarized
+	url = git@github.com:altercation/vim-colors-solarized
+[submodule "vim/.vim/bundle/auto-pairs"]
+	path = vim/.vim/bundle/auto-pairs
+	url = git@github.com:jiangmiao/auto-pairs
+[submodule "vim/.vim/bundle/emmet-vim"]
+	path = vim/.vim/bundle/emmet-vim
+	url = git@github.com:mattn/emmet-vim
+[submodule "vim/.vim/bundle/nerdtree"]
+	path = vim/.vim/bundle/nerdtree
+	url = git@github.com:scrooloose/nerdtree
+[submodule "vim/.vim/bundle/supertab"]
+	path = vim/.vim/bundle/supertab
+	url = git@github.com:ervandew/supertab
+[submodule "vim/.vim/bundle/vim-javascript"]
+	path = vim/.vim/bundle/vim-javascript
+	url = git@github.com:pangloss/vim-javascript
+[submodule "vim/.vim/bundle/vim-multiple-cursors"]
+	path = vim/.vim/bundle/vim-multiple-cursors
+	url = git@github.com:terryma/vim-multiple-cursors
+[submodule "vim/.vim/bundle/vim-windowswap"]
+	path = vim/.vim/bundle/vim-windowswap
+	url = git@github.com:wesQ3/vim-windowswap

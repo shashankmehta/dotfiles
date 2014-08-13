@@ -45,6 +45,9 @@ set number
 set background=dark
 colorscheme slate
 
+set cursorline
+hi CursorLine cterm=none ctermbg=DarkGrey
+
 ""
 "" INDENTATION
 ""

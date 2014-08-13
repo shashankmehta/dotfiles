@@ -39,11 +39,11 @@ syntax enable
 set number
 
 " Colored column (to see line size violations)
-set colorcolumn=80
-highlight ColorColumn ctermbg=238
+" set colorcolumn=80
+" highlight ColorColumn ctermbg=238
 
 set background=dark
-colorscheme solarized
+colorscheme slate
 
 ""
 "" INDENTATION

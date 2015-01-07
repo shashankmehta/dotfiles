@@ -27,6 +27,15 @@ set lazyredraw
 " Allows scrolling and resizing via mouse
 set mouse=a
 
+let $VIMTMP = $HOME."/.vimtmp"
+
+set backupdir=$VIMTMP
+set directory=$VIMTMP
+
+" For project specific .vimrc
+set exrc
+set secure
+
 ""
 "" APPEARANCE
 ""
@@ -53,8 +62,10 @@ hi CursorLine cterm=none ctermbg=DarkGrey
 ""
 
 " Set proper indentation width
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
+autocmd FileType scss setlocal shiftwidth=2 tabstop=2
+autocmd FileType rb setlocal shiftwidth=2 tabstop=2
 
 " Round indent to multiple of 'shiftwidth' for > and < commands
 set shiftround
@@ -106,12 +117,12 @@ let g:user_emmet_leader_key='<C-E>'
 cnoremap w!! w !sudo tee % >/dev/null
 
 " Strip trailing whitespaces. Ugly stuff they are.
-func! DeleteTrailingWS()
-    exe "normal mz"
-    %s/\s\+$//ge
-    exe "normal `z"
-endfunc
-autocmd BufWritePre * call DeleteTrailingWS()
+" func! DeleteTrailingWS()
+"     exe "normal mz"
+"     %s/\s\+$//ge
+"     exe "normal `z"
+" endfunc
+" autocmd BufWritePre * call DeleteTrailingWS()
 
 " Use menu to show command-line completion (in 'full' case)
 set wildmenu
@@ -133,6 +144,7 @@ set scs
 
 filetype plugin on
 filetype indent on
+
 
 " Source .vimrc after saving .vimrc
 autocmd bufwritepost .vimrc source $MYVIMRC

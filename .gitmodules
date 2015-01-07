@@ -22,3 +22,15 @@
 [submodule "vim/.vim/bundle/vim-windowswap"]
 	path = vim/.vim/bundle/vim-windowswap
 	url = git@github.com:wesQ3/vim-windowswap
+[submodule "vim/.vim/bundle/vim-go"]
+	path = vim/.vim/bundle/vim-go
+	url = git@github.com:chriskempson/fatih/vim-go.git
+[submodule "vim/.vim/bundle/vim-better-whitespace"]
+	path = vim/.vim/bundle/vim-better-whitespace
+	url = git@github.com:ntpeters/vim-better-whitespace
+[submodule "vim/.vim/editorconfig-vim"]
+	path = vim/.vim/editorconfig-vim
+	url = git@github.com:editorconfig/editorconfig-vim.git
+[submodule "vim/.vim/bundle/vim-indexed-search"]
+	path = vim/.vim/bundle/vim-indexed-search
+	url = git@github.com:henrik/vim-indexed-search.git

@@ -55,7 +55,7 @@ set background=dark
 colorscheme slate
 
 set cursorline
-hi CursorLine cterm=none ctermbg=DarkGrey
+hi CursorLine cterm=none ctermbg=black
 
 ""
 "" INDENTATION

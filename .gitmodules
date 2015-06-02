@@ -1,32 +1,32 @@
 [submodule "vim/.vim/bundle/vim-colors-solarized"]
-	path = vim/.vim/bundle/vim-colors-solarized
+	path = thesetup/vim/.vim/bundle/vim-colors-solarized
 	url = git@github.com:altercation/vim-colors-solarized
 [submodule "vim/.vim/bundle/auto-pairs"]
-	path = vim/.vim/bundle/auto-pairs
+	path = thesetup/vim/.vim/bundle/auto-pairs
 	url = git@github.com:jiangmiao/auto-pairs
 [submodule "vim/.vim/bundle/emmet-vim"]
-	path = vim/.vim/bundle/emmet-vim
+	path = thesetup/vim/.vim/bundle/emmet-vim
 	url = git@github.com:mattn/emmet-vim
 [submodule "vim/.vim/bundle/nerdtree"]
-	path = vim/.vim/bundle/nerdtree
+	path = thesetup/vim/.vim/bundle/nerdtree
 	url = git@github.com:scrooloose/nerdtree
 [submodule "vim/.vim/bundle/supertab"]
-	path = vim/.vim/bundle/supertab
+	path = thesetup/vim/.vim/bundle/supertab
 	url = git@github.com:ervandew/supertab
 [submodule "vim/.vim/bundle/vim-javascript"]
-	path = vim/.vim/bundle/vim-javascript
+	path = thesetup/vim/.vim/bundle/vim-javascript
 	url = git@github.com:pangloss/vim-javascript
 [submodule "vim/.vim/bundle/vim-multiple-cursors"]
-	path = vim/.vim/bundle/vim-multiple-cursors
+	path = thesetup/vim/.vim/bundle/vim-multiple-cursors
 	url = git@github.com:terryma/vim-multiple-cursors
 [submodule "vim/.vim/bundle/vim-windowswap"]
-	path = vim/.vim/bundle/vim-windowswap
+	path = thesetup/vim/.vim/bundle/vim-windowswap
 	url = git@github.com:wesQ3/vim-windowswap
 [submodule "vim/.vim/bundle/vim-go"]
 	path = vim/.vim/bundle/vim-go
 	url = git@github.com:chriskempson/fatih/vim-go.git
 [submodule "vim/.vim/bundle/vim-better-whitespace"]
-	path = vim/.vim/bundle/vim-better-whitespace
+	path = thesetup/vim/.vim/bundle/vim-better-whitespace
 	url = git@github.com:ntpeters/vim-better-whitespace
 [submodule "vim/.vim/editorconfig-vim"]
 	path = vim/.vim/editorconfig-vim
@@ -35,11 +35,11 @@
 	path = vim/.vim/bundle/vim-indexed-search
 	url = git@github.com:henrik/vim-indexed-search.git
 [submodule "vim/.vim/bundle/vim-coffee-script"]
-	path = vim/.vim/bundle/vim-coffee-script
+	path = thesetup/vim/.vim/bundle/vim-coffee-script
 	url = git@github.com:kchmck/vim-coffee-script.git
 [submodule "vim/.vim/bundle/editorconfig-vim"]
-	path = vim/.vim/bundle/editorconfig-vim
+	path = thesetup/vim/.vim/bundle/editorconfig-vim
 	url = git@github.com:editorconfig/editorconfig-vim.git
 [submodule "vim/.vim/bundle/tabular"]
-	path = vim/.vim/bundle/tabular
+	path = thesetup/vim/.vim/bundle/tabular
 	url = git@github.com:godlygeek/tabular.git

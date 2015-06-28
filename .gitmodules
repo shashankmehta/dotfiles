@@ -55,3 +55,24 @@
 [submodule "thesetup/vim/.vim/bundle/ack.vim"]
 	path = thesetup/vim/.vim/bundle/ack.vim
 	url = git@github.com:mileszs/ack.vim.git
+[submodule "thesetup/vim/.vim/bundle/syntastic"]
+	path = thesetup/vim/.vim/bundle/syntastic
+	url = git@github.com:scrooloose/syntastic.git
+[submodule "thesetup/vim/.vim/bundle/vim-expand-region"]
+	path = thesetup/vim/.vim/bundle/vim-expand-region
+	url = git@github.com:terryma/vim-expand-region.git
+[submodule "thesetup/vim/.vim/bundle/vim-commentary"]
+	path = thesetup/vim/.vim/bundle/vim-commentary
+	url = git@github.com:tpope/vim-commentary.git
+[submodule "thesetup/vim/.vim/bundle/vim-fugitive"]
+	path = thesetup/vim/.vim/bundle/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive.git
+[submodule "thesetup/vim/.vim/bundle/vim-sleuth"]
+	path = thesetup/vim/.vim/bundle/vim-sleuth
+	url = git@github.com:tpope/vim-sleuth.git
+[submodule "thesetup/vim/.vim/bundle/vim-github-comment"]
+	path = thesetup/vim/.vim/bundle/vim-github-comment
+	url = git@github.com:mmozuras/vim-github-comment.git
+[submodule "thesetup/vim/.vim/bundle/webapi-vim"]
+	path = thesetup/vim/.vim/bundle/webapi-vim
+	url = git@github.com:mattn/webapi-vim.git

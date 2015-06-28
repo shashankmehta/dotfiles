@@ -197,3 +197,20 @@ autocmd InsertEnter * se cul
 let g:CommandTMaxHeight=20
 let g:CommandTCancelMap='<Esc>'
 let g:CommandTAcceptSelectionTabMap='t'
+
+" SYNTASTIC Config
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['semistandard']
+
+" vim-expand-region plugin
+vmap v <Plug>(expand_region_expand)
+vmap <C-v> <Plug>(expand_region_shrink)
+
+" vim-github-comment
+let g:github_user = 'shashankmehta'

@@ -133,6 +133,10 @@ set wildmenu
 "   - on second <Tab>, complete the next full match and show menu
 set wildmode=list:longest,full
 
+" Sets ignore directories
+" Most useful for CtrlP
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,node_modules
+
 " Ignore case when searching
 set ic
 

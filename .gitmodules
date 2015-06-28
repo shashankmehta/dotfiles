@@ -46,3 +46,6 @@
 [submodule "thesetup/vim/.vim/bundle/vim-jade"]
 	path = thesetup/vim/.vim/bundle/vim-jade
 	url = git@github.com:digitaltoad/vim-jade
+[submodule "thesetup/vim/.vim/bundle/ctrlp.vim"]
+	path = thesetup/vim/.vim/bundle/ctrlp.vim
+	url = git@github.com:kien/ctrlp.vim

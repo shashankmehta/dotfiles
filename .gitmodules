@@ -76,3 +76,6 @@
 [submodule "thesetup/vim/.vim/bundle/webapi-vim"]
 	path = thesetup/vim/.vim/bundle/webapi-vim
 	url = git@github.com:mattn/webapi-vim.git
+[submodule "thesetup/vim/.vim/bundle/vim-airline"]
+	path = thesetup/vim/.vim/bundle/vim-airline
+	url = git@github.com:bling/vim-airline.git

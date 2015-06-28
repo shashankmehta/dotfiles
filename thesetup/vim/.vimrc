@@ -214,3 +214,7 @@ vmap <C-v> <Plug>(expand_region_shrink)
 
 " vim-github-comment
 let g:github_user = 'shashankmehta'
+
+" vim-airline
+let g:airline_theme='powerlineish'
+let g:airline_powerline_fonts=1

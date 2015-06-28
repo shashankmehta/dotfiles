@@ -49,3 +49,9 @@
 [submodule "thesetup/vim/.vim/bundle/ctrlp.vim"]
 	path = thesetup/vim/.vim/bundle/ctrlp.vim
 	url = git@github.com:kien/ctrlp.vim
+[submodule "thesetup/vim/.vim/bundle/vim-gitgutter"]
+	path = thesetup/vim/.vim/bundle/vim-gitgutter
+	url = git@github.com:airblade/vim-gitgutter.git
+[submodule "thesetup/vim/.vim/bundle/ack.vim"]
+	path = thesetup/vim/.vim/bundle/ack.vim
+	url = git@github.com:mileszs/ack.vim.git

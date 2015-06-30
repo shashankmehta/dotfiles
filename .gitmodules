@@ -55,9 +55,6 @@
 [submodule "thesetup/vim/.vim/bundle/ack.vim"]
 	path = thesetup/vim/.vim/bundle/ack.vim
 	url = git@github.com:mileszs/ack.vim.git
-[submodule "thesetup/vim/.vim/bundle/syntastic"]
-	path = thesetup/vim/.vim/bundle/syntastic
-	url = git@github.com:scrooloose/syntastic.git
 [submodule "thesetup/vim/.vim/bundle/vim-expand-region"]
 	path = thesetup/vim/.vim/bundle/vim-expand-region
 	url = git@github.com:terryma/vim-expand-region.git

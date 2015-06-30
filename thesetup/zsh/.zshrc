@@ -91,6 +91,8 @@ export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools"
 export NVM_DIR="/Users/sm/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+export ANDROID_HOME=$HOME/Library/Android/sdk
+
 export PHANTOMJS_BIN="/usr/local/bin/phantomjs"
 
 # source $HOME/.aliases.zsh

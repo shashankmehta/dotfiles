@@ -76,3 +76,6 @@
 [submodule "thesetup/vim/.vim/bundle/vim-airline"]
 	path = thesetup/vim/.vim/bundle/vim-airline
 	url = git@github.com:bling/vim-airline.git
+[submodule "thesetup/vim/.vim/bundle/vim-stylus"]
+	path = thesetup/vim/.vim/bundle/vim-stylus
+	url = git@github.com:wavded/vim-stylus

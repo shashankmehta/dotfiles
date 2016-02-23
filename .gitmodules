@@ -1,81 +1,81 @@
 [submodule "vim/.vim/bundle/vim-colors-solarized"]
 	path = thesetup/vim/.vim/bundle/vim-colors-solarized
-	url = git@github.com:altercation/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized
 [submodule "vim/.vim/bundle/auto-pairs"]
 	path = thesetup/vim/.vim/bundle/auto-pairs
-	url = git@github.com:jiangmiao/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs
 [submodule "vim/.vim/bundle/emmet-vim"]
 	path = thesetup/vim/.vim/bundle/emmet-vim
-	url = git@github.com:mattn/emmet-vim
+	url = https://github.com/mattn/emmet-vim
 [submodule "vim/.vim/bundle/nerdtree"]
 	path = thesetup/vim/.vim/bundle/nerdtree
-	url = git@github.com:scrooloose/nerdtree
+	url = https://github.com/scrooloose/nerdtree
 [submodule "vim/.vim/bundle/supertab"]
 	path = thesetup/vim/.vim/bundle/supertab
-	url = git@github.com:ervandew/supertab
+	url = https://github.com/ervandew/supertab
 [submodule "vim/.vim/bundle/vim-javascript"]
 	path = thesetup/vim/.vim/bundle/vim-javascript
-	url = git@github.com:pangloss/vim-javascript
+	url = https://github.com/pangloss/vim-javascript
 [submodule "vim/.vim/bundle/vim-multiple-cursors"]
 	path = thesetup/vim/.vim/bundle/vim-multiple-cursors
-	url = git@github.com:terryma/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors
 [submodule "vim/.vim/bundle/vim-windowswap"]
 	path = thesetup/vim/.vim/bundle/vim-windowswap
-	url = git@github.com:wesQ3/vim-windowswap
+	url = https://github.com/wesQ3/vim-windowswap
 [submodule "vim/.vim/bundle/vim-go"]
 	path = vim/.vim/bundle/vim-go
-	url = git@github.com:chriskempson/fatih/vim-go.git
+	url = https://github.com/chriskempson/fatih/vim-go.git
 [submodule "vim/.vim/bundle/vim-better-whitespace"]
 	path = thesetup/vim/.vim/bundle/vim-better-whitespace
-	url = git@github.com:ntpeters/vim-better-whitespace
+	url = https://github.com/ntpeters/vim-better-whitespace
 [submodule "vim/.vim/editorconfig-vim"]
 	path = vim/.vim/editorconfig-vim
-	url = git@github.com:editorconfig/editorconfig-vim.git
+	url = https://github.com/editorconfig/editorconfig-vim.git
 [submodule "vim/.vim/bundle/vim-indexed-search"]
 	path = vim/.vim/bundle/vim-indexed-search
-	url = git@github.com:henrik/vim-indexed-search.git
+	url = https://github.com/henrik/vim-indexed-search.git
 [submodule "vim/.vim/bundle/vim-coffee-script"]
 	path = thesetup/vim/.vim/bundle/vim-coffee-script
-	url = git@github.com:kchmck/vim-coffee-script.git
+	url = https://github.com/kchmck/vim-coffee-script.git
 [submodule "vim/.vim/bundle/editorconfig-vim"]
 	path = thesetup/vim/.vim/bundle/editorconfig-vim
-	url = git@github.com:editorconfig/editorconfig-vim.git
+	url = https://github.com/editorconfig/editorconfig-vim.git
 [submodule "vim/.vim/bundle/tabular"]
 	path = thesetup/vim/.vim/bundle/tabular
-	url = git@github.com:godlygeek/tabular.git
+	url = https://github.com/godlygeek/tabular.git
 [submodule "thesetup/vim/.vim/bundle/vim-jade"]
 	path = thesetup/vim/.vim/bundle/vim-jade
-	url = git@github.com:digitaltoad/vim-jade
+	url = https://github.com/digitaltoad/vim-jade
 [submodule "thesetup/vim/.vim/bundle/ctrlp.vim"]
 	path = thesetup/vim/.vim/bundle/ctrlp.vim
-	url = git@github.com:kien/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim
 [submodule "thesetup/vim/.vim/bundle/vim-gitgutter"]
 	path = thesetup/vim/.vim/bundle/vim-gitgutter
-	url = git@github.com:airblade/vim-gitgutter.git
+	url = https://github.com/airblade/vim-gitgutter.git
 [submodule "thesetup/vim/.vim/bundle/ack.vim"]
 	path = thesetup/vim/.vim/bundle/ack.vim
-	url = git@github.com:mileszs/ack.vim.git
+	url = https://github.com/mileszs/ack.vim.git
 [submodule "thesetup/vim/.vim/bundle/vim-expand-region"]
 	path = thesetup/vim/.vim/bundle/vim-expand-region
-	url = git@github.com:terryma/vim-expand-region.git
+	url = https://github.com/terryma/vim-expand-region.git
 [submodule "thesetup/vim/.vim/bundle/vim-commentary"]
 	path = thesetup/vim/.vim/bundle/vim-commentary
-	url = git@github.com:tpope/vim-commentary.git
+	url = https://github.com/tpope/vim-commentary.git
 [submodule "thesetup/vim/.vim/bundle/vim-fugitive"]
 	path = thesetup/vim/.vim/bundle/vim-fugitive
-	url = git@github.com:tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
 [submodule "thesetup/vim/.vim/bundle/vim-sleuth"]
 	path = thesetup/vim/.vim/bundle/vim-sleuth
-	url = git@github.com:tpope/vim-sleuth.git
+	url = https://github.com/tpope/vim-sleuth.git
 [submodule "thesetup/vim/.vim/bundle/vim-github-comment"]
 	path = thesetup/vim/.vim/bundle/vim-github-comment
-	url = git@github.com:mmozuras/vim-github-comment.git
+	url = https://github.com/mmozuras/vim-github-comment.git
 [submodule "thesetup/vim/.vim/bundle/webapi-vim"]
 	path = thesetup/vim/.vim/bundle/webapi-vim
-	url = git@github.com:mattn/webapi-vim.git
+	url = https://github.com/mattn/webapi-vim.git
 [submodule "thesetup/vim/.vim/bundle/vim-airline"]
 	path = thesetup/vim/.vim/bundle/vim-airline
-	url = git@github.com:bling/vim-airline.git
+	url = https://github.com/bling/vim-airline.git
 [submodule "thesetup/vim/.vim/bundle/vim-stylus"]
 	path = thesetup/vim/.vim/bundle/vim-stylus
-	url = git@github.com:wavded/vim-stylus
+	url = https://github.com/wavded/vim-stylus

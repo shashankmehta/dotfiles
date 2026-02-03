@@ -27,10 +27,11 @@ set lazyredraw
 " Allows scrolling and resizing via mouse
 set mouse=a
 
-let $VIMTMP = $HOME."/.vimtmp"
-
-set backupdir=$VIMTMP
-set directory=$VIMTMP
+" Swap, backup, and undo directories
+set directory=~/.vim/swap//
+set backupdir=~/.vim/backup//
+set undodir=~/.vim/undo//
+set undofile
 
 " For project specific .vimrc
 set exrc

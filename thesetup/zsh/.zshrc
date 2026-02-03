@@ -106,3 +106,18 @@ for file in ${(M)config_files:#*/path.zsh}
 do
   source $file
 done
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/shashankmehta/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
+export PATH="$HOME/.local/bin:$PATH"
+
+# bun completions
+[ -s "/Users/shashankmehta/.bun/_bun" ] && source "/Users/shashankmehta/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+[ -s "/Users/shashankmehta/.scm_breeze/scm_breeze.sh" ] && source "/Users/shashankmehta/.scm_breeze/scm_breeze.sh"

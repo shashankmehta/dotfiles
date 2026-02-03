@@ -1,0 +1,4 @@
+# Vim temp directories (machine-specific)
+thesetup/vim/.vim/swap/
+thesetup/vim/.vim/backup/
+thesetup/vim/.vim/undo/

@@ -49,7 +49,7 @@ plugins=(git autojump brew)
 
 # User configuration
 
-export PATH="/Users/sm/.rvm/gems/ruby-2.2.2/bin:/Users/sm/.rvm/gems/ruby-2.2.2@global/bin:/Users/sm/.rvm/rubies/ruby-2.2.2/bin:/Users/sm/.rvm/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -79,21 +79,24 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-[ -s "/Users/sm/.scm_breeze/scm_breeze.sh" ] && source "/Users/sm/.scm_breeze/scm_breeze.sh"
-alias ls="ls -Gvh --color=auto"
-
-[[ -s "$HOME/.rvm/scripts/rvm"  ]] && . "$HOME/.rvm/scripts/rvm"
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+alias ls="ls -Gh"
 
 export PATH="$PATH:$HOME/Library/Android/sdk/tools"
 export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools"
 
-export NVM_DIR="/Users/sm/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR="/Users/shashankmehta/.nvm"
+# Lazy-load NVM to avoid ~300ms shell startup penalty
+nvm() {
+  unset -f nvm node npm npx
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+  nvm "$@"
+}
+node() { unset -f nvm node npm npx; [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"; node "$@"; }
+npm() { unset -f nvm node npm npx; [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"; npm "$@"; }
+npx() { unset -f nvm node npm npx; [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"; npx "$@"; }
 
 export ANDROID_HOME=$HOME/Library/Android/sdk
 
-export PHANTOMJS_BIN="/usr/local/bin/phantomjs"
 
 # source $HOME/.aliases.zsh
 
@@ -106,12 +109,39 @@ for file in ${(M)config_files:#*/path.zsh}
 do
   source $file
 done
+
 # The following lines have been added by Docker Desktop to enable Docker CLI completions.
 fpath=(/Users/shashankmehta/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
-export PATH="$HOME/.local/bin:$PATH"
+
+[ -s "/Users/shashankmehta/.scm_breeze/scm_breeze.sh" ] && source "/Users/shashankmehta/.scm_breeze/scm_breeze.sh"
+
+# Disable SCM Breeze command wrapping in Claude Code sessions (must be AFTER scm_breeze.sh loads)
+if [[ -n "$CLAUDECODE" ]]; then
+  shell_command_wrapping_enabled=false
+fi
+
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+
+# Added by Windsurf
+export PATH="/Users/shashankmehta/.codeium/windsurf/bin:$PATH"
+
+export PATH="$PATH:/Users/shashankmehta/.local/bin"
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/shashankmehta/.lmstudio/bin"
+# End of LM Studio CLI section
+
+eval "$(ruby ~/.local/try.rb init ~/src/tries)"
+
+# pnpm
+export PNPM_HOME="/Users/shashankmehta/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
 
 # bun completions
 [ -s "/Users/shashankmehta/.bun/_bun" ] && source "/Users/shashankmehta/.bun/_bun"
@@ -119,5 +149,3 @@ export PATH="$HOME/.local/bin:$PATH"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-
-[ -s "/Users/shashankmehta/.scm_breeze/scm_breeze.sh" ] && source "/Users/shashankmehta/.scm_breeze/scm_breeze.sh"

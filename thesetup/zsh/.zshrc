@@ -79,7 +79,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias ls="ls -Gh"
+# Old SCM Breeze path removed (was /Users/sm/)
+alias ls="ls -Gvh --color=auto"
+
+[[ -s "$HOME/.rvm/scripts/rvm"  ]] && . "$HOME/.rvm/scripts/rvm"
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 export PATH="$PATH:$HOME/Library/Android/sdk/tools"
 export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools"
@@ -116,13 +120,6 @@ autoload -Uz compinit
 compinit
 # End of Docker CLI completions
 
-[ -s "/Users/shashankmehta/.scm_breeze/scm_breeze.sh" ] && source "/Users/shashankmehta/.scm_breeze/scm_breeze.sh"
-
-# Disable SCM Breeze command wrapping in Claude Code sessions (must be AFTER scm_breeze.sh loads)
-if [[ -n "$CLAUDECODE" ]]; then
-  shell_command_wrapping_enabled=false
-fi
-
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 
 # Added by Windsurf
@@ -132,8 +129,6 @@ export PATH="$PATH:/Users/shashankmehta/.local/bin"
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/shashankmehta/.lmstudio/bin"
 # End of LM Studio CLI section
-
-eval "$(ruby ~/.local/try.rb init ~/src/tries)"
 
 # pnpm
 export PNPM_HOME="/Users/shashankmehta/Library/pnpm"
@@ -149,3 +144,15 @@ esac
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Homebrew Ruby
+export PATH="/opt/homebrew/opt/ruby/bin:/opt/homebrew/lib/ruby/gems/4.0.0/bin:$PATH"
+
+# try - experiment directories
+export TRY_PATH="$HOME/dev/trydir"
+eval "$(ruby /opt/homebrew/lib/ruby/gems/4.0.0/gems/try-cli-1.7.1/try.rb init)"
+
+# Disable SCM Breeze in Claude Code sessions (conflicts with shell snapshots)
+if [[ -z "$CLAUDECODE" ]]; then
+  [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
+fi

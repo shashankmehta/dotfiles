@@ -9,3 +9,6 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 
 alias v="vim"
+
+# TMUX + CLAUDE
+alias tc="bash ~/dev/tmux-claude.sh"

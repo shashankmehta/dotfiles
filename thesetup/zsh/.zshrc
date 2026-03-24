@@ -98,6 +98,8 @@ nvm() {
 node() { unset -f nvm node npm npx; [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"; node "$@"; }
 npm() { unset -f nvm node npm npx; [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"; npm "$@"; }
 npx() { unset -f nvm node npm npx; [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"; npx "$@"; }
+# Make nvm global binaries (e.g. agent-browser) available without loading nvm
+export PATH="$(ls -d $NVM_DIR/versions/node/*/bin | tail -1):$PATH"
 
 export ANDROID_HOME=$HOME/Library/Android/sdk
 
